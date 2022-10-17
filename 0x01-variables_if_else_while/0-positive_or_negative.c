@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+
 /**
  * main -  print if number n is +ive,-ve or zero
  * Return: 0
