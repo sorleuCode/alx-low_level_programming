@@ -11,18 +11,18 @@ int main(void)
 	{
 		for (b = 0; b <= 9; b++)
 		{
-			putchar((a % 10) + '0');
-			putchar((b % 10) + '0');
-
-			if (a == 9 && b == 9)
+			if (a != b && b > a)
 			{
-				continue;
+				putchar(a + '0');
+				putchar(b + '0');
 
-				putchar(',');
-				putchar(' ');
+				if (a == 9 && b == 9)
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
 		}
-
 	}
 	putchar('\n');
 	return (0);
