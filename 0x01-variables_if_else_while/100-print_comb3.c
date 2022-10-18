@@ -5,19 +5,23 @@
  */
 int main(void)
 {
-	int n;
+	int a, b;
 
-	for (n = 00; n <= 99; n++)
+	for (a = 0; a <= 9; a++)
 	{
-		putchar(n + '0');
-
-		if (n == 99)
+		for (b = 0; b <= 9; b++)
 		{
-			putchar(',');
-			putchar(' ');
+			putchar(a + '0');
+			putchar(b + '0');
+
+			if (a == 9 && b == 9)
+			{
+				putchar(',');
+				putchar(' ');
+			}
 		}
+
 	}
 	putchar('\n');
 	return (0);
 }
-
