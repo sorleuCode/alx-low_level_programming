@@ -1,17 +1,17 @@
 #include <stdio.h>
 /**
- * main - prints all possible combination of single_digit numbers
+ * main - print all possible combination of two digits number
  * Return: Always 0
  */
 int main(void)
 {
-	int a;
+	int n;
 
-	for (a = 0; a <= 9; a++)
+	for (n = 00; n <= 99; n++)
 	{
-		putchar(a + '0');
+		putchar(n + '0');
 
-		if (a < 9)
+		if (n == 99)
 		{
 			putchar(',');
 			putchar(' ');
@@ -20,3 +20,4 @@ int main(void)
 	putchar('\n');
 	return (0);
 }
+
