@@ -11,19 +11,16 @@ int main(void)
 	{
 		for (b = 0; b <= 99; b++)
 		{
-			if (a < b)
+			putchar(a + '0');
+			putchar(b + '0');
+			putchar(' ');
+			putchar(a + '0');
+			putchar(a + '0');
+			
+			if (a == 98 && b == 99)
 			{
-				putchar(a + '0');
-				putchar(b + '0');
+				putchar(',');
 				putchar(' ');
-				putchar(a + '0');
-				putchar(a +'0');
-
-				if (a == 98 && b == 99)
-				{
-					putchar(',');
-					putchar(' ');
-				}
 			}
 		}
 	}
