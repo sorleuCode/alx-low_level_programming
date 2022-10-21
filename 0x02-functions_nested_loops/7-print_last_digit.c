@@ -2,12 +2,16 @@
 
 /**
  * print_last_digit - prints the last digit of a number
- * @n: the number to he printed
+ * @n: the number
  * Return: Always 0
  */
-int rint_last_digit(int n)
+int print_last_digit(int n)
 {
 	int rem = n % 10;
 
-	return (rem);
+	if (rem < 0)
+	{
+		rem *= -1;
+		return (rem);
+	}
 }
