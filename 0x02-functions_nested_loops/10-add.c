@@ -12,6 +12,14 @@ int add(int a, int b)
 
 	ad = a + b;
 
-	_putchar(ad + '0');
+	if (ad <= 9)
+	{
+		_putchar(ad + '0');
+	}
+	else
+	{
+		_putchar((ad / 10) + '0');
+		_putchar((ad % 10) + '0');
+	}
 	return (ad);
 }
