@@ -21,14 +21,12 @@ void times_table(void)
 
 			if (val <= 9)
 			{
-				val = num * multi;
-				_putchar(val + '0');
 				_putchar(' ');
 			}
 			else
 			{
 				_putchar((val / 10) + '0');
-				-putchar((val % 10) + '0');
+				_putchar((val % 10) + '0');
 			}
 		}
 		_putchar('\n');
