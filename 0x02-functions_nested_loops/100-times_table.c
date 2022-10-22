@@ -5,8 +5,10 @@
  * @n: the time_table number
  */
 void print_times_table(int n)
-{;
-	int num, val, multi;
+{
+	int num;
+	int val;
+	int multi;
 
 	if ((n <= 15) && !(n < 0))
 	{
@@ -36,7 +38,7 @@ void print_times_table(int n)
 				else
 				{
 					_putchar((val / 100) + '0');
-					_putchar((val % 100) + '0);
+					_putchar((val % 100) + '0');
 				}
 				_putchar('\n');
 			}
