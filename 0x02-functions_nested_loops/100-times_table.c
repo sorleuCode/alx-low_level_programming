@@ -38,8 +38,7 @@ void print_times_table(int n)
 				}
 				else
 				{
-					_putchar((val / 100) + '0');
-					_putchar((val % 100) + '0');
+					printf(" %d", val);
 				}
 			}
 			_putchar('\n');
