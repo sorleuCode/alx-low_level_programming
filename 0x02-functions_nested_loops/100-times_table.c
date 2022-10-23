@@ -20,7 +20,7 @@ void print_times_table(int n)
 
 			for (multi = 1; multi <= n; multi++)
 			{
-				printf(", %d", val);
+				printf(", ");
 
 				val = num * multi;
 
