@@ -14,9 +14,10 @@ int main(void)
 
 	for (i = 1; i < 1024; i++)
 	{
-		sum += i
 		if ((i % 3) == 0 || (i % 5) == 0)
 		{
+			sum += i;
+
 			printf("%d", sum);
 		}
 	}
