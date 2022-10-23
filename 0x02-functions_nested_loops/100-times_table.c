@@ -16,33 +16,28 @@ void print_times_table(int n)
 
 		for (num = 0; num <= n; num++)
 		{
-			_putchar('0');
+			printf("0");
 
 			for (multi = 1; multi <= n; multi++)
 			{
-				_putchar(',');
-				_putchar(' ');
+				printf("' %d", val);
 
 				val = num * multi;
 
 				if (val <= 9)
 				{
-					_putchar(' ');
-					_putchar(' ');
-					_putchar(val + '0');
+					printf("  %d", val);
 				}
 				else if (val > 9 && val < 100)
 				{
-					_putchar(' ');
-					_putchar((val / 10) + '0');
-					_putchar((val % 10) + '0');
+					printf(" %d", val);
 				}
 				else
 				{
-					printf(" %d", val);
+					printf("%d", val);
 				}
 			}
-			_putchar('\n');
+			printf("\n");;
 		}
 	}
 }
