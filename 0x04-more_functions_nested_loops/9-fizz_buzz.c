@@ -31,7 +31,7 @@ int main(void)
 		{
 			continue;
 		}
-		printf("  ");
+		printf(" ");
 
 
 	}
