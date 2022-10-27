@@ -10,7 +10,7 @@ void print_triangle(int size)
 
 	if (size > 0)
 	{
-		for (xter = 0; xter < size; xter++)
+		for (xter = 1; xter <= size; xter++)
 		{
 			for (space = size - xter; space > 0; space--)
 			{
@@ -18,7 +18,7 @@ void print_triangle(int size)
 			}
 			for (space = 0; space < xter; space++)
 				_putchar('#');
-			if (xter == size - 1)
+			if (xter == size)
 			{
 				continue;
 			}
