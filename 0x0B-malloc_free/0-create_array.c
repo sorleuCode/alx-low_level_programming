@@ -13,9 +13,11 @@ char *create_array(unsigned int size, char c)
 	char *chArray;
 	unsigned int count;
 
-	if (size == 0 || chArray == NULL)
+	if (size == 0)
 		return (NULL);
 	chArray = malloc(size * sizeof(char));
+	if (chArray == NULL)
+		return (NULL);
 	for (count = 0; count < size; count++)
 		chArray[count] = c;
 	return (chArray);
