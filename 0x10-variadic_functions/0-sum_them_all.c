@@ -1,4 +1,4 @@
-#include "variadic_function.h"
+#include "variadic_functions.h"
 #include <stdio.h>
 #include <stdarg.h>
 
@@ -9,7 +9,7 @@
  */
 int sum_them_all(const unsigned int n, ...)
 {
-	va_lisy my_nums;
+	va_list my_nums;
 	unsigned int count;
 	int sum;
 
